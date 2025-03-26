@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    border-bottom: 180px;
+    background-color: #ffffff; /* Light background */
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.logo-container.center {
+    justify-content: center;
+}
+.logo-container.left {
+    justify-content: flex-start;
+}
+.logo{ /*img*/
+    width: 60%; 
+    max-width: 1000px; 
+    height: auto;  
+}
+.logo.center{
+    width: 100%;
+}
+
+h3{
+    margin: 20px;
+    font-family: 'Klee One', sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    text-align: center;
+}
+footer{
+    grid-area: footer;
+    background-color: #f6e0e0;
+    color: #5BAFD4;
+    text-align: center;
+    padding: 2em 1vw;
+}
+
+/* Each navigation item styling */
+.nav-link {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+    width: 17vw;
+    padding: 20px 10px;
+    margin: 10px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 70px; /* Rounded corners for home page */
+    text-wrap: nowrap;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+.nav-link-title {
+    background-color: #7EC7EB; 
+}
+.nav-link:hover {
+    text-decoration: underline;
+    color: #e17777; 
+}
+.nav-link-title:hover {
+    background-color: #5BAFD4; 
+    color: black;
+    text-decoration: none;
+}
+/*-----------------------------------------------------------------------------------*/
+/*homepage*/
+.game{
+    display: flex;
+    justify-content: center; /* Center the game display horizontally */
+    width: 100%;  /* Full width of the screen */
+    padding: 50px 0px;
+}
+.gameDisplay{
+    height: 80vw;
+    background-color: hsla(200, 73%, 71%, 0.3);
+    width: 75%;  /* Full width of the screen */
+}
+.score{
+    color: #e17777;
+    padding: 0px 20px;
+}
+/*end homepage*/
+
+/*contact and about me*/
+.photo{
+    margin-top: 10px;
+    width: 80vw;
+    height: 100%;
+    max-height: 700px;
+    padding: 20px;
+    object-fit: cover; 
+}
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-description {
+    padding: 0vw 5vw;
+    width: 80vw;
+    margin: 10px;
+    text-align: center;
+}
+/*end contact and about me*/
+
+/*blog and portfolio*/
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    column-gap: 40px; 
+    justify-content: center; 
+    padding: 20px; 
+}
+.card-content{
+    background-color: #D9D9D9;
+    width: 350px; 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.card-content img{
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
+.card-content h4 {
+    font-family: 'Mali', Courier, sans-serif;
+    font-weight: 500;
+    font-size: x-large;
+    padding: 15px 20px 5px 20px;
+    margin: 0;
+}
+.card-content p {
+    padding: 0 20px 15px 20px;
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+a.cardLink{
+    color: #E17776;
+    text-decoration: none;
+    margin-top: auto;
+    padding: 10px 20px;
+    align-self: flex-end; 
+}
+a.cardLink:hover{
+    color: #5BAFD4;
+    font-style: italic;
+    text-decoration: underline;
+}
+/*end blog and portfolio*/
+
+
+@media screen and (min-width: 300px) { /* 300 and up */    
+    .navbar-toggler {
+        border: none;
+        outline: none;
+        margin: 30px 50px 10px 10px;
+    }
+    
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='currentColor' class='bi bi-list-ul' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2'/%3E%3C/svg%3E");        /* Use custom icon SVG for the hamburger menu */
+    }    
+
+    .order-md-1 {
+        order: 2; /* Move image below text */
+    }
+    .order-md-2 {
+        order: 1; /* Move text above image */
+    }
+    .text-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        text-align: center;
+    }
+
+}
+@media screen and (min-width: 992px) {
+    .text-md-start {
+        text-align: left;
+    }
+    .photo{
+        width: 50vw;
+    }
+    .text-description {
+        width: 40vw;
+    }
+    
+
+}
+
+    
