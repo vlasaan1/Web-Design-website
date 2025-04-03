@@ -15,3 +15,10 @@ I gained hands-on experience in:
 
     Debugging and optimizing CSS for different screen sizes
 
+
+An example view of home page with smaller window:
+![alt text](https://github.com/vlasaan1/Web-Design-website/blob/main/image.png?raw=true)
+
+
+Blog page with expanded navigation:
+![alt text](https://github.com/vlasaan1/Web-Design-website/blob/main/image_blog.png?raw=true)
